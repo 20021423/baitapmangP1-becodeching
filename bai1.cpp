@@ -1,6 +1,4 @@
-﻿// https://paste.ubuntu.com/p/BJPsYNY6CZ/?fbclid=IwAR3Awnj0WeZRfaVceyvLp-h78-owY3Mqtgs7f-fUG7r32e3XVrqOgUHpWas
-// Bài 1: Cho 1 dãy số nguyên. Viết chương trình xóa các phần tử là số đối xứng.
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 void NhapMang(int a[], int n);
@@ -62,9 +60,10 @@ int main()
 	{
 		if (SoDoiXung(a[i]))
 		{
-			XoaPhanTu(a,n,i);
+			XoaPhanTu(a, n, i);
+			i--;
 		}
 	}
-	XuatMang(a,n);
+	XuatMang(a, n);
 	return 0;
 }
