@@ -24,7 +24,6 @@ void XuatMang(int a[], int n)
 void GopMang(int a[], int b[], int na, int& nb)
 {
 	int n = na + nb;
-	int c[200];
 	int j = nb;
 	for (int i = 0; i < na; i++)
 	{

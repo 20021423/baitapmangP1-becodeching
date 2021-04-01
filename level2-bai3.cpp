@@ -1,5 +1,9 @@
 ﻿// https://paste.ubuntu.com/p/zm8c7QqXDj/?fbclid=IwAR21pexDZDM-FzHLwmWQ4gRVpMsYZFwcSCoFzHFt87BXxAtRkrjIOjAu3YQ
-
+// 5. (Tư duy + Xử lý) // Bài thi kết thúc học phần: Tin học cơ sở 2(PTIT HCM)
+//Cho 1 mảng số nguyên.Sắp xếp các số âm nằm trước giảm dần tiếp đến là số 0 rồi đến các số dương giảm dần
+//VD : mảng: 12pt : -4     5      0      6 - 1     0      8      3 - 11    15    2    1
+//Kết quả : -1 - 4 - 11     0       0    15     8      6       5      3     2    1
+//Gợi ý : Sử dụng mảng phụ
 #include <iostream>
 using namespace std;
 
@@ -20,15 +24,6 @@ void XuatMang(int a[], int n)
 	{
 		cout << a[i] << " ";
 	}
-}
-void ThemPhanTu(int a[], int& n, int pos, int value)
-{
-	for (int i = n; i > pos; i--)
-	{
-		a[i] = a[i - 1];
-	}
-	a[pos] = value;
-	n++;
 }
 void SapXepMang(int a[], int b[], int na, int nb, int c[])
 {

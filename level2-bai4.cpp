@@ -31,13 +31,13 @@ void XoaPhanTu(int a[], int& n, int pos)
 }
 void TachMang(int a[], int &n, int b[], int &j)
 {
-	int j = 0;
 	for (int i = 0; i < n; i++)
 	{
 		if (a[i] < 0)
 		{
 			b[j] = a[i];
 			XoaPhanTu(a, n, i);
+			i--;
 			j++;
 		}
 	}

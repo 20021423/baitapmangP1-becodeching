@@ -23,7 +23,6 @@ void XuatMang(int a[], int n)
 }
 void GopMang(int a[], int b[], int na, int& nb)
 {
-	int n = na + nb;
 	int c[200];
 	int i = 0;
 	while (i < na)
@@ -36,10 +35,10 @@ void GopMang(int a[], int b[], int na, int& nb)
 		c[i] = b[j];
 		i++;
 	}
-	nb = n;
-	for (int i = 0; i < nb; i++)
+	nb = i;
+	for (int k = 0; k < i; k++)
 	{
-		b[i] = c[i];
+		b[k] = c[k];
 	}
 }
 
