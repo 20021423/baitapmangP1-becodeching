@@ -29,7 +29,7 @@ void XoaPhanTu(int a[], int& n, int pos)
 	}
 	n--;
 }
-void TachMang(int a[], int &n, int b[])
+void TachMang(int a[], int &n, int b[], int &j)
 {
 	int j = 0;
 	for (int i = 0; i < n; i++)
@@ -52,7 +52,7 @@ int main()
 	} while (n <= 0);
 	int a[100], b[100];
 	NhapMang(a, n);
-	//int j = 0;
+	int j = 0;
 	TachMang(a, n, b, j);
 	XuatMang(a, n);
 	cout << endl;
