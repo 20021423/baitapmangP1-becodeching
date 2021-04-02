@@ -33,30 +33,23 @@ void SapXepMang(int a[], int b[], int na, int nb, int c[])
 	{
 		if (a[i] < b[j])
 		{
-			c[k] = a[i];
-			i++;
-			k++;
+			c[k++] = a[i++];
 		}
 		else
 		{
-			c[k] = b[j];
-			j++;
-			k++;
+			c[k++] = b[j++];
 		}
 	}
 	while (i < na)
 	{
-		c[k] = a[i];
-		i++;
-		k++;
+		c[k++] = a[i++];
 	}
 	while (j < nb)
 	{
-		c[k] = b[j];
-		j++;
-		k++;
+		c[k++] = b[j++];
 	}
 }
+
 
 int main()
 {
